@@ -1,0 +1,1 @@
+Vmos a hacer la API RESTFUl(para enlazar la base de datos con nuestra aplicación y hacer el CRUD)

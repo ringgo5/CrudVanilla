@@ -6,3 +6,20 @@ CLIENTE                                     API                                 
 appAndroid            (-------                           (--------                       (mysql,mongoDB,...)
 app ios                   res                                 res
 app web vuejs
+
+------------REST----------------
+
+1) uso de interfaz uniforme
+2) modelo Cliente-Servidor
+3) operaciones sin estado
+4) almacenamiento en caché
+5) sistema de capas
+6) código bajo demanda
+
+Cuando cumple estos requisitos es rest full
+para usar el api es necesario autorizarse frente al mismo añadiendo un header token
+El tipo de autorizacion es BEARER{TOKEN}
+Nos llegara algo como una cadena de texto
+El del video coge la api del banco central europe argentino, ahi hay documentacion que te dice que tipo de token necesita,coge el token, lo Copia
+y lo pega cuando hace una request(get por ejemplo). Primero lo ahce sin token y no le deja, una vez mete el token, al hacer el request
+ya aparece la información.

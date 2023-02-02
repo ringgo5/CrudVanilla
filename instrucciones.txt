@@ -1,5 +1,5 @@
 Vamos a crear la API restfull, para enlazar base dedatos con nuestro crud.Lo haremos de tal forma que podremos comunicarnos con cualquier base de datos
-
+Lo haremos con VUEJS
                         req                                 req
                        ----)                           --------)
 CLIENTE                                     API                                         BASE DE DATOS
@@ -23,3 +23,21 @@ Nos llegara algo como una cadena de texto
 El del video coge la api del banco central europe argentino, ahi hay documentacion que te dice que tipo de token necesita,coge el token, lo Copia
 y lo pega cuando hace una request(get por ejemplo). Primero lo ahce sin token y no le deja, una vez mete el token, al hacer el request
 ya aparece la información.
+
+Usaremos:
+    postman para probar la IP
+    express que es un wareframe de node js y el paquete mysql de node js
+
+empezamos---------------------
+
+Creamos carpeta y en el terminal ponemos  npm init -y para crear el archivo json
+Es el archivo base donde vamos a trabajar.
+Instalamos expres--) npm install express
+Instalamos mysql---) npm install mysql
+
+Creamos un archivo (app.js) y lo primero es hacer el required de los paquetes que hemos instalado:
+    require('expres') required(mysql) asignandolo a variables(para trabajar mejor)
+
+creamo un objeto de express para poder acceder a todo:  let app = express()
+Creamos nuestra primera funcion con listen para comprobar que funciona, ejecutamos la funcion con : 
+    node app y vemos como en consola pone servidor ok

@@ -41,3 +41,21 @@ Creamos un archivo (app.js) y lo primero es hacer el required de los paquetes qu
 creamo un objeto de express para poder acceder a todo:  let app = express()
 Creamos nuestra primera funcion con listen para comprobar que funciona, ejecutamos la funcion con : 
     node app y vemos como en consola pone servidor ok
+
+Si vamos a localhost:3000 veremos que nos dice cannot get /, esto es que no puede acceder a la raíz,para ello debemos configurar las rutas,as cuales se hacen
+todas con metodo GET:
+    app.get('/',function(req,res){
+        res.send('Ruta INICIO')
+    })
+    cortamos servidor, lo volvemos a arrancar y vemos como ahora si aparece ruta inicio, que es lo mismo que si ponemos localhost:3000/
+    (con la barra,ya que / es raíz)
+
+Ahora creamos una variable de entorno por si el pueto está ocupado:
+    const puerto = process.env.PUERTO; modificamos tambien el listen
+    Ahora podremos poner el puerto que queramos con set PUERTO=7000
+ 
+// CREAMOS BASE DE DATOS // MSQL(LENGUAJE DE CONSULTAS ESTRUCTURADO)
+
+usando phpmyadmin, creamos la tabla desde la interfaz y añadimos el script con los articulos:
+
+// CONEXION A LA BASE DE DATOS  //

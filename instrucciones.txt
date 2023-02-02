@@ -1,1 +1,8 @@
-Vamos a crear la API restfull, para enlazar base dedatos con nuestro crud
+Vamos a crear la API restfull, para enlazar base dedatos con nuestro crud.Lo haremos de tal forma que podremos comunicarnos con cualquier base de datos
+
+                        req                                 req
+                       ----)                           --------)
+CLIENTE                                     API                                         BASE DE DATOS
+appAndroid            (-------                           (--------                       (mysql,mongoDB,...)
+app ios                   res                                 res
+app web vuejs
